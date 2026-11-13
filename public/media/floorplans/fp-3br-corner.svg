@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" fill="none">
+  <rect width="1200" height="840" fill="#F7F3EC"/>
+  <rect x="32" y="32" width="1136" height="776" stroke="#181715" stroke-width="1.2"/>
+  <rect x="40" y="40" width="1120" height="760" stroke="#181715" stroke-opacity="0.25" stroke-width="0.75"/>
+
+  <!-- Wraparound Corner Terrace -->
+  <path d="M110 88 H1060 V210 H240 V635 H110 Z" fill="#EAE3D7" stroke="#181715" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="640" y="146" text-anchor="middle" font-family="Georgia, serif" font-size="16" letter-spacing="3" fill="#181715">WRAPAROUND PANORAMIC CORNER TERRACE</text>
+  <text x="640" y="168" text-anchor="middle" font-family="sans-serif" font-size="11" letter-spacing="1.5" fill="#4E4A44">DUAL ASPECT SOUTH-WEST EXPOSURE  |  760 SQ FT EXTERIOR</text>
+
+  <!-- Main Envelope -->
+  <rect x="240" y="210" width="820" height="425" fill="#FAF7F2" stroke="#181715" stroke-width="5"/>
+  <!-- Bronze Glazing -->
+  <line x1="240" y1="240" x2="240" y2="590" stroke="#8C6D46" stroke-width="6"/>
+  <line x1="280" y1="210" x2="1010" y2="210" stroke="#8C6D46" stroke-width="6"/>
+
+  <!-- Partitions -->
+  <!-- Corner Living & Dining Pavilion (x:240..620, y:210..480) -->
+  <line x1="620" y1="210" x2="620" y2="430" stroke="#181715" stroke-width="3.5"/>
+  <line x1="240" y1="480" x2="570" y2="480" stroke="#181715" stroke-width="3"/>
+  <!-- Kitchen & Scullery (x:240..620, y:480..635) -->
+  <line x1="620" y1="480" x2="620" y2="635" stroke="#181715" stroke-width="3.5"/>
+  <rect x="315" y="520" width="215" height="50" fill="#EAE3D7" stroke="#181715" stroke-width="1.4"/>
+
+  <!-- Private Bedroom Wing (x:620..1060, y:210..635) -->
+  <line x1="620" y1="430" x2="1060" y2="430" stroke="#181715" stroke-width="3"/>
+  <line x1="840" y1="210" x2="840" y2="430" stroke="#181715" stroke-width="2.8"/>
+  <line x1="840" y1="430" x2="840" y2="635" stroke="#181715" stroke-width="2.8"/>
+
+  <!-- Furniture -->
+  <rect x="300" y="268" width="240" height="82" stroke="#4E4A44" stroke-width="1.2" fill="#F4EFE6"/>
+  <rect x="330" y="376" width="180" height="62" stroke="#4E4A44" stroke-width="1.2" fill="#F4EFE6"/>
+  <rect x="665" y="255" width="130" height="120" stroke="#4E4A44" stroke-width="1.2" fill="#F4EFE6"/>
+  <rect x="885" y="255" width="130" height="120" stroke="#4E4A44" stroke-width="1.2" fill="#F4EFE6"/>
+  <rect x="885" y="475" width="130" height="115" stroke="#4E4A44" stroke-width="1.2" fill="#F4EFE6"/>
+
+  <!-- Labels -->
+  <g font-family="Georgia, serif" fill="#181715" text-anchor="middle">
+    <text x="425" y="316" font-size="16" letter-spacing="2.5">CORNER SALON</text>
+    <text x="425" y="412" font-size="14" letter-spacing="2">DINING GALLERY</text>
+    <text x="425" y="550" font-size="14" letter-spacing="2">SHOW KITCHEN &amp; SCULLERY</text>
+    <text x="730" y="320" font-size="14" letter-spacing="2">SUITE 02</text>
+    <text x="950" y="320" font-size="15" letter-spacing="2">PRIMARY WING</text>
+    <text x="950" y="538" font-size="14" letter-spacing="2">SUITE 03 / STUDY</text>
+    <text x="730" y="538" font-size="13" letter-spacing="1.5">PRIVATE LIFT FOYER &amp; BATHS</text>
+  </g>
+
+  <!-- Title Block -->
+  <line x1="40" y1="712" x2="1160" y2="712" stroke="#181715" stroke-width="1.2"/>
+  <line x1="360" y1="712" x2="360" y2="800" stroke="#181715" stroke-width="0.9"/>
+  <line x1="820" y1="712" x2="820" y2="800" stroke="#181715" stroke-width="0.9"/>
+  <text x="68" y="750" font-family="Georgia, serif" font-size="18" letter-spacing="3" fill="#181715">AURELIA DEVELOPMENTS</text>
+  <text x="68" y="774" font-family="sans-serif" font-size="11" letter-spacing="2" fill="#787268">ARCHITECTURAL PLATE — TYPE B CORNER</text>
+  <text x="390" y="748" font-family="Georgia, serif" font-size="16" letter-spacing="2" fill="#181715">THREE-BEDROOM CORNER RESIDENCE</text>
+  <text x="390" y="774" font-family="sans-serif" font-size="11" letter-spacing="1.5" fill="#4E4A44">INTERNAL: 2,840 SQ FT  |  EXTERIOR: 760 SQ FT  |  TOTAL: 3,600 SQ FT</text>
+  <circle cx="1090" cy="756" r="22" stroke="#181715" stroke-width="1"/>
+  <path d="M1090 736 L1096 760 L1090 754 L1084 760 Z" fill="#8C6D46"/>
+  <text x="945" y="760" text-anchor="middle" font-family="sans-serif" font-size="11" letter-spacing="2" fill="#4E4A44">SCALE 1 : 100</text>
+</svg>

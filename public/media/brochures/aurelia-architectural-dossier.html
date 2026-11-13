@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Aurelia Developments — Architectural Dossier &amp; Specifications</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 64px 48px;
+      background: #F4EFE6;
+      color: #181715;
+      font-family: Georgia, 'Times New Roman', serif;
+      line-height: 1.6;
+    }
+    .sheet {
+      max-width: 860px;
+      margin: 0 auto;
+      border: 1px solid rgba(24,23,21,0.22);
+      background: #FAF7F2;
+      padding: 64px;
+    }
+    .kicker {
+      font-family: system-ui, sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: #8C6D46;
+    }
+    h1 {
+      font-weight: 400;
+      font-size: 40px;
+      letter-spacing: -0.01em;
+      margin: 16px 0 12px;
+    }
+    .rule {
+      height: 1px;
+      background: rgba(24,23,21,0.15);
+      margin: 32px 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px 40px;
+      font-family: system-ui, sans-serif;
+      font-size: 14px;
+    }
+    .label {
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #787268;
+      margin-bottom: 4px;
+    }
+    .print-btn {
+      display: inline-block;
+      margin-top: 32px;
+      padding: 12px 24px;
+      border: 1px solid #181715;
+      background: #181715;
+      color: #F4EFE6;
+      font-family: system-ui, sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    @media print { .print-btn { display: none; } body { padding: 0; } }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="kicker">Aurelia Developments — Private Sales Monograph</div>
+    <h1>Architectural Portfolio &amp; Material Specification</h1>
+    <p>Prepared exclusively for private acquisition inquiries. All residences are delivered with natural honed stone flooring, bespoke European architectural joinery, acoustic triple-glazed bronze fenestration, and dedicated private concierge governance.</p>
+    <div class="rule"></div>
+    <div class="grid">
+      <div>
+        <div class="label">Structural Envelope</div>
+        <div>Post-tensioned acoustic concrete slab with hand-selected Roman travertine and Portland limestone rain-screen facade.</div>
+      </div>
+      <div>
+        <div class="label">Fenestration</div>
+        <div>Custom thermally broken patinated bronze frames with low-iron solar-control acoustic glazing.</div>
+      </div>
+      <div>
+        <div class="label">Interior Joinery</div>
+        <div>FSC-certified smoked European oak, fluted walnut cabinetry, and monolithic Pietra Grey stone islands.</div>
+      </div>
+      <div>
+        <div class="label">Wellness &amp; Environmental</div>
+        <div>Hospital-grade MERV-15 fresh-air filtration, circadian lighting infrastructure, and subterranean thermal spa access.</div>
+      </div>
+    </div>
+    <div class="rule"></div>
+    <p style="font-family: system-ui, sans-serif; font-size: 12px; color: #787268;">
+      Notice: Dimensions, layouts, and indicative pricing remain subject to formal Sales &amp; Purchase Agreement documentation.
+    </p>
+    <button class="print-btn" onclick="window.print()">Print / Save Architectural PDF</button>
+  </div>
+</body>
+</html>

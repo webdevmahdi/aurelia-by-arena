@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurelia Developments — Interactive Architectural Walkthrough</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #171614;
+      color: #F3EFE7;
+      font-family: system-ui, -apple-system, sans-serif;
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      padding: 16px 28px;
+      border-bottom: 1px solid rgba(243,239,231,0.14);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    .stage {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      cursor: grab;
+    }
+    .stage:active { cursor: grabbing; }
+    .pano {
+      width: 140%;
+      height: 110%;
+      object-fit: cover;
+      transform: translate(-15%, -5%);
+      transition: transform 0.2s ease-out, opacity 0.35s ease;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+    .controls {
+      position: absolute;
+      bottom: 28px;
+      left: 28px;
+      right: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .rooms { display: flex; gap: 8px; flex-wrap: wrap; }
+    button {
+      background: rgba(23,22,20,0.82);
+      color: #F3EFE7;
+      border: 1px solid rgba(243,239,231,0.28);
+      padding: 10px 16px;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    button.active {
+      background: #8C6D46;
+      border-color: #8C6D46;
+      color: #FAF7F2;
+    }
+    .hint {
+      font-size: 11px;
+      color: #B4ACA0;
+      letter-spacing: 0.1em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span>Aurelia Private Spatial Walkthrough</span>
+    <span id="roomLabel">01 / Double-Height Great Salon</span>
+  </header>
+  <div class="stage" id="stage">
+    <img id="pano" class="pano" src="/media/interior-living.jpg" alt="Architectural Walkthrough View" />
+    <div class="controls">
+      <div class="rooms">
+        <button class="active" data-src="/media/interior-living.jpg" data-label="01 / Double-Height Great Salon">01 Great Salon</button>
+        <button data-src="/media/interior-kitchen.jpg" data-label="02 / Monolithic Stone Kitchen">02 Atelier Kitchen</button>
+        <button data-src="/media/interior-bedroom.jpg" data-label="03 / Primary Sanctuary Suite">03 Primary Suite</button>
+        <button data-src="/media/amenity-pool.jpg" data-label="04 / Subterranean Thermal Spa">04 Thermal Spa</button>
+        <button data-src="/media/hero-sanctuary.jpg" data-label="05 / Coastal Cantilevered Loggia">05 Terrace View</button>
+      </div>
+      <div class="hint">Drag horizontally to pan perspective</div>
+    </div>
+  </div>
+  <script>
+    const stage = document.getElementById('stage');
+    const pano = document.getElementById('pano');
+    const label = document.getElementById('roomLabel');
+    let dragging = false, startX = 0, offsetX = -15;
+
+    stage.addEventListener('pointerdown', (e) => { dragging = true; startX = e.clientX; });
+    window.addEventListener('pointerup', () => { dragging = false; });
+    window.addEventListener('pointermove', (e) => {
+      if (!dragging) return;
+      const dx = (e.clientX - startX) * 0.04;
+      startX = e.clientX;
+      offsetX = Math.max(-28, Math.min(0, offsetX + dx));
+      pano.style.transform = `translate(${offsetX}%, -5%)`;
+    });
+
+    document.querySelectorAll('.rooms button').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.rooms button').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        pano.style.opacity = '0.35';
+        setTimeout(() => {
+          pano.src = btn.dataset.src;
+          label.textContent = btn.dataset.label;
+          pano.style.opacity = '1';
+        }, 180);
+      });
+    });
+  </script>
+</body>
+</html>
