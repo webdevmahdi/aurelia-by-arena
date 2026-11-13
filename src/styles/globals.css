@@ -1,0 +1,106 @@
+@import "tailwindcss";
+@import "./tokens.css";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Plus Jakarta Sans Variable', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --color-canvas: var(--surface-canvas);
+  --color-elevated: var(--surface-elevated);
+  --color-stone: var(--surface-stone);
+  --color-taupe: var(--surface-taupe);
+  --color-obsidian: var(--surface-obsidian);
+  --color-charcoal: var(--surface-charcoal);
+
+  --color-ink: var(--ink-primary);
+  --color-ink-secondary: var(--ink-secondary);
+  --color-ink-muted: var(--ink-muted);
+  --color-ivory: var(--ink-on-dark);
+  --color-ivory-muted: var(--ink-on-dark-muted);
+
+  --color-bronze: var(--accent-bronze);
+  --color-bronze-hover: var(--accent-bronze-hover);
+  --color-brass: var(--accent-brass-on-dark);
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: var(--surface-canvas);
+    color: var(--ink-primary);
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: var(--font-serif);
+    font-feature-settings: "liga" 1, "kern" 1;
+  }
+
+  :focus-visible {
+    outline: 1.5px solid var(--accent-bronze);
+    outline-offset: 3px;
+  }
+}
+
+/* Architectural utility helpers */
+.container-wide {
+  width: 100%;
+  max-width: var(--container-wide);
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 4rem);
+}
+
+.container-editorial {
+  width: 100%;
+  max-width: var(--container-editorial);
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 4rem);
+}
+
+.hairline-t {
+  border-top: 1px solid var(--border-hairline);
+}
+
+.hairline-b {
+  border-bottom: 1px solid var(--border-hairline);
+}
+
+.hairline-y {
+  border-top: 1px solid var(--border-hairline);
+  border-bottom: 1px solid var(--border-hairline);
+}
+
+.hairline-box {
+  border: 1px solid var(--border-hairline);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle diagonal hatch for SOLD / UNAVAILABLE non-color visual distinction */
+.pattern-diagonal-subtle {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 5px,
+    rgba(24, 23, 21, 0.05) 5px,
+    rgba(24, 23, 21, 0.05) 6px
+  );
+}

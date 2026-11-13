@@ -1,0 +1,80 @@
+:root {
+  /* Typography Families (No Inter, Geist, or Space Grotesk) */
+  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Plus Jakarta Sans Variable', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Background Surfaces — Warm Material Palette (No pure white dominant canvas) */
+  --surface-canvas: #F4EFE6;
+  --surface-elevated: #FAF7F2;
+  --surface-stone: #EAE3D7;
+  --surface-taupe: #DDD4C5;
+  --surface-obsidian: #171614;
+  --surface-charcoal: #22201D;
+
+  /* Text Colors */
+  --ink-primary: #181715;
+  --ink-secondary: #4E4A44;
+  --ink-muted: #706A60;
+  --ink-on-dark: #F3EFE7;
+  --ink-on-dark-muted: #B4ACA0;
+
+  /* Restrained Bronze / Brushed Brass Accent */
+  --accent-bronze: #8C6D46;
+  --accent-bronze-hover: #715635;
+  --accent-bronze-subtle: rgba(140, 109, 70, 0.12);
+  --accent-brass-on-dark: #C4A77D;
+
+  /* Semantic Status Tokens (paired with icons + labels, never color alone) */
+  --status-available-fg: #2E4D38;
+  --status-available-bg: #E2EBE4;
+  --status-available-border: rgba(46, 77, 56, 0.28);
+
+  --status-reserved-fg: #7A561E;
+  --status-reserved-bg: #EFE5D3;
+  --status-reserved-border: rgba(122, 86, 30, 0.28);
+
+  --status-sold-fg: #663F38;
+  --status-sold-bg: #EBE0DD;
+  --status-sold-border: rgba(102, 63, 56, 0.28);
+
+  --status-unavailable-fg: #524F4A;
+  --status-unavailable-bg: #E4E0D9;
+  --status-unavailable-border: rgba(82, 79, 74, 0.28);
+
+  /* Architectural Borders */
+  --border-hairline: rgba(24, 23, 21, 0.12);
+  --border-strong: rgba(24, 23, 21, 0.26);
+  --border-on-dark: rgba(243, 239, 231, 0.14);
+  --border-on-dark-strong: rgba(243, 239, 231, 0.30);
+
+  /* Spacing Rhythm (4px base: 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128px) */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-6: 1.5rem;   /* 24px */
+  --space-8: 2rem;     /* 32px */
+  --space-12: 3rem;    /* 48px */
+  --space-16: 4rem;    /* 64px */
+  --space-20: 5rem;    /* 80px */
+  --space-24: 6rem;    /* 96px */
+  --space-32: 8rem;    /* 128px */
+
+  /* Container Widths */
+  --container-narrow: 56rem;   /* 896px */
+  --container-editorial: 76rem;/* 1216px */
+  --container-wide: 90rem;     /* 1440px */
+
+  /* Motion Durations & Easing Curves */
+  --duration-fast: 180ms;
+  --duration-base: 340ms;
+  --duration-slow: 680ms;
+  --ease-architectural: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+
+  /* Breakpoints Reference */
+  --bp-sm: 640px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+  --bp-2xl: 1536px;
+}

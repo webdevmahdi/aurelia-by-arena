@@ -1,0 +1,133 @@
+import type { FloorPlanDTO } from '@/types/api';
+
+export const mockFloorPlans: FloorPlanDTO[] = [
+  // Project 1: The Solis Pavilion (proj-solis)
+  {
+    id: 'fp-solis-2br',
+    projectId: 'proj-solis',
+    name: 'Type A — Two-Bedroom Waterfront Loggia',
+    imageUrl: '/media/floorplans/fp-2br-loggia.svg',
+    pdfUrl: '/media/brochures/aurelia-architectural-dossier.html',
+    areaSqFt: 2150,
+    bedrooms: 2,
+    bathrooms: 3,
+  },
+  {
+    id: 'fp-solis-3br',
+    projectId: 'proj-solis',
+    name: 'Type B — Three-Bedroom Panoramic Corner',
+    imageUrl: '/media/floorplans/fp-3br-corner.svg',
+    pdfUrl: '/media/brochures/aurelia-architectural-dossier.html',
+    areaSqFt: 3600,
+    bedrooms: 3,
+    bathrooms: 4,
+  },
+  {
+    id: 'fp-solis-4br',
+    projectId: 'proj-solis',
+    name: 'Sky Villa — Four-Bedroom Plunge Pool Residence',
+    imageUrl: '/media/floorplans/fp-4br-sky-villa.svg',
+    pdfUrl: '/media/brochures/aurelia-architectural-dossier.html',
+    areaSqFt: 5600,
+    bedrooms: 4,
+    bathrooms: 5,
+  },
+
+  // Project 2: Veridian House Mayfair (proj-veridian)
+  {
+    id: 'fp-veridian-2br',
+    projectId: 'proj-veridian',
+    name: 'Garden Plate — Two-Bedroom Courtyard Residence',
+    imageUrl: '/media/floorplans/fp-2br-loggia.svg',
+    pdfUrl: '/media/brochures/aurelia-architectural-dossier.html',
+    areaSqFt: 1980,
+    bedrooms: 2,
+    bathrooms: 2,
+  },
+  {
+    id: 'fp-veridian-3br',
+    projectId: 'proj-veridian',
+    name: 'Principal Plate — Three-Bedroom Lateral Residence',
+    imageUrl: '/media/floorplans/fp-3br-corner.svg',
+    pdfUrl: '/media/brochures/aurelia-architectural-dossier.html',
+    areaSqFt: 3240,
+    bedrooms: 3,
+    bathrooms: 4,
+  },
+  {
+    id: 'fp-veridian-ph',
+    projectId: 'proj-veridian',
+    name: 'Crown Penthouse — Four-Bedroom Belvedere',
+    imageUrl: '/media/floorplans/fp-4br-sky-villa.svg',
+    pdfUrl: '/media/brochures/aurelia-architectural-dossier.html',
+    areaSqFt: 4950,
+    bedrooms: 4,
+    bathrooms: 5,
+  },
+
+  // Project 3: Casa Caldera Mallorca (proj-caldera)
+  {
+    id: 'fp-caldera-3br',
+    projectId: 'proj-caldera',
+    name: 'Terrace Residence — Three-Bedroom Sea Loggia',
+    imageUrl: '/media/floorplans/fp-3br-corner.svg',
+    pdfUrl: '/media/brochures/aurelia-architectural-dossier.html',
+    areaSqFt: 3420,
+    bedrooms: 3,
+    bathrooms: 4,
+  },
+  {
+    id: 'fp-caldera-4br',
+    projectId: 'proj-caldera',
+    name: 'Cliff Sanctuary — Four-Bedroom Pool Villa',
+    imageUrl: '/media/floorplans/fp-4br-sky-villa.svg',
+    pdfUrl: '/media/brochures/aurelia-architectural-dossier.html',
+    areaSqFt: 5280,
+    bedrooms: 4,
+    bathrooms: 5,
+  },
+
+  // Project 4: Atelier Nine New York (proj-atelier)
+  {
+    id: 'fp-atelier-2br',
+    projectId: 'proj-atelier',
+    name: 'Gallery Loft — Two-Bedroom West Exposure',
+    imageUrl: '/media/floorplans/fp-2br-loggia.svg',
+    pdfUrl: '/media/brochures/aurelia-architectural-dossier.html',
+    areaSqFt: 2240,
+    bedrooms: 2,
+    bathrooms: 3,
+  },
+  {
+    id: 'fp-atelier-3br',
+    projectId: 'proj-atelier',
+    name: 'Full-Floor Atelier — Three-Bedroom Hudson Loggia',
+    imageUrl: '/media/floorplans/fp-3br-corner.svg',
+    pdfUrl: '/media/brochures/aurelia-architectural-dossier.html',
+    areaSqFt: 3780,
+    bedrooms: 3,
+    bathrooms: 4,
+  },
+
+  // Project 5: Palais Serein Geneva (proj-serein)
+  {
+    id: 'fp-serein-2br',
+    projectId: 'proj-serein',
+    name: 'Parc Residence — Two-Bedroom Lakefront Salon',
+    imageUrl: '/media/floorplans/fp-2br-loggia.svg',
+    pdfUrl: '/media/brochures/aurelia-architectural-dossier.html',
+    areaSqFt: 2090,
+    bedrooms: 2,
+    bathrooms: 3,
+  },
+  {
+    id: 'fp-serein-4br',
+    projectId: 'proj-serein',
+    name: 'Attique Residence — Four-Bedroom Lake Panorama',
+    imageUrl: '/media/floorplans/fp-4br-sky-villa.svg',
+    pdfUrl: '/media/brochures/aurelia-architectural-dossier.html',
+    areaSqFt: 5120,
+    bedrooms: 4,
+    bathrooms: 5,
+  },
+];

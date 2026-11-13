@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" fill="none">
+  <rect width="1200" height="840" fill="#F7F3EC"/>
+  <rect x="32" y="32" width="1136" height="776" stroke="#181715" stroke-width="1.2"/>
+  <rect x="40" y="40" width="1120" height="760" stroke="#181715" stroke-opacity="0.25" stroke-width="0.75"/>
+
+  <!-- Sky Terrace with Private Plunge Pool -->
+  <rect x="100" y="84" width="1000" height="146" fill="#EAE3D7" stroke="#181715" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <!-- Plunge pool -->
+  <rect x="790" y="102" width="275" height="96" fill="#D5DFE0" stroke="#181715" stroke-width="1.4"/>
+  <text x="927" y="154" text-anchor="middle" font-family="Georgia, serif" font-size="13" letter-spacing="2" fill="#181715">PRIVATE PLUNGE POOL</text>
+  <text x="430" y="150" text-anchor="middle" font-family="Georgia, serif" font-size="16" letter-spacing="3" fill="#181715">FULL-WIDTH SKY PAVILION TERRACE</text>
+  <text x="430" y="172" text-anchor="middle" font-family="sans-serif" font-size="11" letter-spacing="1.5" fill="#4E4A44">22.4m FRONTAGE  |  OUTDOOR DINING PERGOLA</text>
+
+  <!-- Main Residence Footprint -->
+  <rect x="100" y="230" width="1000" height="420" fill="#FAF7F2" stroke="#181715" stroke-width="5"/>
+  <line x1="140" y1="230" x2="1055" y2="230" stroke="#8C6D46" stroke-width="6"/>
+
+  <!-- West Primary Wing (x:100..390) -->
+  <line x1="390" y1="230" x2="390" y2="650" stroke="#181715" stroke-width="3.5"/>
+  <line x1="100" y1="455" x2="390" y2="455" stroke="#181715" stroke-width="2.5"/>
+  <line x1="245" y1="455" x2="245" y2="650" stroke="#181715" stroke-width="2.5"/>
+
+  <!-- Double-Height Central Gallery & Salon (x:390..760) -->
+  <line x1="760" y1="230" x2="760" y2="650" stroke="#181715" stroke-width="3.5"/>
+  <line x1="390" y1="485" x2="760" y2="485" stroke="#181715" stroke-width="2.5"/>
+  <rect x="455" y="520" width="230" height="52" fill="#EAE3D7" stroke="#181715" stroke-width="1.4"/>
+
+  <!-- East Guest Suites Wing (x:760..1100) -->
+  <line x1="760" y1="435" x2="1100" y2="435" stroke="#181715" stroke-width="2.8"/>
+  <line x1="930" y1="230" x2="930" y2="650" stroke="#181715" stroke-width="2.8"/>
+
+  <!-- Labels -->
+  <g font-family="Georgia, serif" fill="#181715" text-anchor="middle">
+    <text x="245" y="346" font-size="16" letter-spacing="2">PRIMARY SANCTUARY</text>
+    <text x="172" y="556" font-size="12" letter-spacing="1.5">SPA BATH</text>
+    <text x="318" y="556" font-size="12" letter-spacing="1.5">BOUTIQUE WARDROBE</text>
+    <text x="575" y="352" font-size="17" letter-spacing="3">DOUBLE-HEIGHT SALON</text>
+    <text x="570" y="552" font-size="14" letter-spacing="2">CHEF KITCHEN &amp; WINE GALLERY</text>
+    <text x="845" y="338" font-size="14" letter-spacing="2">SUITE 02</text>
+    <text x="1015" y="338" font-size="14" letter-spacing="2">SUITE 03</text>
+    <text x="845" y="546" font-size="14" letter-spacing="2">SUITE 04</text>
+    <text x="1015" y="546" font-size="13" letter-spacing="1.5">LIBRARY &amp; PRIVATE LIFT</text>
+  </g>
+  <g font-family="sans-serif" font-size="11" fill="#787268" text-anchor="middle" letter-spacing="1">
+    <text x="575" y="376">6.2m CEILING CLEARANCE  |  TRAVERTINE HEARTH</text>
+  </g>
+
+  <!-- Title Block -->
+  <line x1="40" y1="712" x2="1160" y2="712" stroke="#181715" stroke-width="1.2"/>
+  <line x1="360" y1="712" x2="360" y2="800" stroke="#181715" stroke-width="0.9"/>
+  <line x1="850" y1="712" x2="850" y2="800" stroke="#181715" stroke-width="0.9"/>
+  <text x="68" y="750" font-family="Georgia, serif" font-size="18" letter-spacing="3" fill="#181715">AURELIA DEVELOPMENTS</text>
+  <text x="68" y="774" font-family="sans-serif" font-size="11" letter-spacing="2" fill="#787268">ARCHITECTURAL PLATE — SKY VILLA</text>
+  <text x="390" y="748" font-family="Georgia, serif" font-size="16" letter-spacing="2" fill="#181715">FOUR-BEDROOM DUPLEX SKY VILLA</text>
+  <text x="390" y="774" font-family="sans-serif" font-size="11" letter-spacing="1.5" fill="#4E4A44">INTERNAL: 4,420 SQ FT  |  EXTERIOR &amp; POOL: 1,180 SQ FT  |  TOTAL: 5,600 SQ FT</text>
+  <circle cx="1090" cy="756" r="22" stroke="#181715" stroke-width="1"/>
+  <path d="M1090 736 L1096 760 L1090 754 L1084 760 Z" fill="#8C6D46"/>
+  <text x="965" y="760" text-anchor="middle" font-family="sans-serif" font-size="11" letter-spacing="2" fill="#4E4A44">FULL FLOOR</text>
+</svg>
